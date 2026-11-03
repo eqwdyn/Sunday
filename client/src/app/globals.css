@@ -1,0 +1,31 @@
+:root {
+  --color-bg-dark: #153f3c; /* Темно-зеленый из макета */
+  --color-bg-light: #f4f5f3; /* Светлый фон */
+  --color-bg-light-secondary: #e8ede5;
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #ffffff;
+  --color-text-muted-light: #becfc6;
+  --color-text-muted: #737a70;
+  --color-accent: #153f3c; /* Цвет кнопки */
+
+  --font-serif: "Cormorant Garamond", serif; /* Для заголовков */
+  --font-sans: "Inter", sans-serif; /* Для текста */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+}
+
+* {
+  box-sizing: border-box;
+}
