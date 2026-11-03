@@ -1,6 +1,6 @@
 import Image from "next/image";
 import cl from "./Hero.module.css";
-import { ADDRESS } from "../../../../../shared/config";
+import { ADDRESS } from "@shared/config";
 
 export const Hero = () => {
   return (

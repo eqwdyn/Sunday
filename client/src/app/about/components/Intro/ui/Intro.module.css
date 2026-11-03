@@ -1,12 +1,8 @@
-/* components/About/About.module.css */
 .about {
   padding: 100px 0;
   background-color: var(--color-bg-light);
 }
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 40px;
   display: flex;
   flex-direction: column;
   gap: 80px;

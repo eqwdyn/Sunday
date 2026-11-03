@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ADDRESS, BEAUTY_TEL_NUMBER, TG_LINK, VK_LINK } from "@shared/config";
 import cl from "./Footer.module.css";
+import { Container } from "@shared/ui/Сontainer";
 
 export const Footer = () => {
   return (
     <footer className={cl.footer}>
-      <div className={cl.container}>
+      <Container>
         <div className={cl.top}>
           <div className={cl.col}>
             <h2 className={cl.logo}>Sunday</h2>
@@ -41,7 +42,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

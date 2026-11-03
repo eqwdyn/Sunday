@@ -1,0 +1,27 @@
+.link {
+  position: relative;
+  padding-block: 5px;
+  transition: color 0.2s ease-in;
+}
+@media (hover: hover) {
+  .link:hover {
+    color: var(--color-text-muted-light);
+  }
+}
+.link:focus-visible {
+  color: var(--color-text-muted-light);
+  border-radius: 12px;
+}
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 50%;
+  height: 2px;
+  /* color: var(--color-text-muted-light); */
+  background-color: #fff;
+}
