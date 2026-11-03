@@ -43,6 +43,13 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
+
+        <div className={cl.copyInfo}>
+          <p className={cl.copyText}>Демо-лендинг, данные из Яндекс.Карт</p>
+          <p className={cl.copyText}>
+            Сайт будет удалён по первой просьбе правообладателя
+          </p>
+        </div>
       </Container>
     </footer>
   );

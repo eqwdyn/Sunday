@@ -81,6 +81,19 @@
   opacity: 1;
 }
 
+.copyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+  font-size: 12px;
+  opacity: 0.6;
+}
+.copyText {
+  margin: 0;
+}
+
 @media (max-width: 1024px) {
   .top {
     /* Логотип и контакты занимают левую часть, 
