@@ -8,7 +8,7 @@ export default function Home() {
       <main className={cl.container}>
         <div className={cl.bgWrapper}>
           <Image
-            src="/images/interier.png"
+            src="/images/interior.png"
             alt="Sunday Cafe"
             fill
             priority
