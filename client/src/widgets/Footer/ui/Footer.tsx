@@ -13,6 +13,7 @@ export const Footer = () => {
             <p className={cl.tagline}>Кафе · ресторан · бар</p>
           </div>
           <div className={cl.col}>
+            <h4 className={cl.subTitle}>КОНТАКТЫ</h4>
             <p>{ADDRESS}</p>
             <p>{BEAUTY_TEL_NUMBER}</p>
             <div className={cl.links}>

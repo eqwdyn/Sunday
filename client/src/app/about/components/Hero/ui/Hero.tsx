@@ -1,10 +1,11 @@
 import Image from "next/image";
 import cl from "./Hero.module.css";
 import { ADDRESS } from "@shared/config";
+import { Section } from "@shared/ui/Section";
 
 export const Hero = () => {
   return (
-    <section className={cl.hero}>
+    <Section className={cl.hero}>
       <div className={cl.imageWrapper}>
         <Image
           className={cl.image}
@@ -26,6 +27,6 @@ export const Hero = () => {
         </p>
         <address className={cl.address}>{ADDRESS}</address>
       </div>
-    </section>
+    </Section>
   );
 };

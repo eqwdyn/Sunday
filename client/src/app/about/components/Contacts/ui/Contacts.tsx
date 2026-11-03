@@ -6,6 +6,7 @@ import {
   VK_LINK,
 } from "@shared/config";
 import cl from "./Contacts.module.css";
+import { Section } from "@shared/ui/Section";
 
 const schedule = [
   { day: "Понедельник", time: "11:00–23:00" },
@@ -19,7 +20,7 @@ const schedule = [
 
 export const Contacts = () => {
   return (
-    <section className={cl.contacts}>
+    <Section className={cl.contacts}>
       <div className={cl.container}>
         <div className={cl.left}>
           <p className={cl.label}>ДО ВСТРЕЧИ В SUNDAY</p>
@@ -53,6 +54,6 @@ export const Contacts = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };

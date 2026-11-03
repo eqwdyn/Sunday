@@ -2,10 +2,11 @@ import Image from "next/image";
 import cl from "./Meeting.module.css";
 import { Button } from "@shared/ui/Button";
 import { Container } from "@shared/ui/Сontainer";
+import { Section } from "@shared/ui/Section";
 
 export const Meeting = () => {
   return (
-    <section className={cl.aboutImages}>
+    <Section className={cl.aboutImages}>
       <Container className={cl.container}>
         <div className={cl.imageWrapper}>
           <Image
@@ -41,6 +42,6 @@ export const Meeting = () => {
           <Button className={cl.button}>Посмотреть меню ↗</Button>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };

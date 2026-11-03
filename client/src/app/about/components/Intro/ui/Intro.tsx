@@ -2,10 +2,11 @@ import Image from "next/image";
 import cl from "./Intro.module.css";
 import { Button } from "@shared/ui/Button";
 import { Container } from "@shared/ui/Сontainer";
+import { Section } from "@shared/ui/Section";
 
 export const Intro = () => {
   return (
-    <section className={cl.about} id="about">
+    <Section className={cl.about}>
       <Container className={cl.container}>
         {/* Верхняя часть */}
         <div className={cl.topBlock}>
@@ -74,6 +75,6 @@ export const Intro = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };

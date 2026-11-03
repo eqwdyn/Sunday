@@ -1,17 +1,19 @@
+import { SectionTitle } from "@shared/ui/SectionTitle";
 import cl from "./Atmosphere.module.css";
 import { Container } from "@shared/ui/Сontainer";
+import { Section } from "@shared/ui/Section";
 
 export const Atmosphere = () => {
   return (
-    <section className={cl.aboutText}>
+    <Section>
       <Container className={cl.container}>
         <div className={cl.topLeft}>
           <p className={cl.sectionLabel}>ЗНАКОМИМСЯ БЛИЖЕ</p>
-          <h2 className={cl.heading}>
+          <SectionTitle>
             Ваш маленький
             <br />
             Sunday среди недели
-          </h2>
+          </SectionTitle>
         </div>
         <div className={cl.topRight}>
           <p className={cl.primaryColoredText}>
@@ -27,6 +29,6 @@ export const Atmosphere = () => {
           </p>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };

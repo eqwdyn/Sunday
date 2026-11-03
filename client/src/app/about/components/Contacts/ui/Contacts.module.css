@@ -1,7 +1,7 @@
 .contacts {
-  background-color: var(--color-bg-light-secondary);
-  padding: 100px 0;
+  background-color: var(--color-bg-light-secondary) !important;
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 }
+
 .label {
   font-size: 12px;
   text-transform: uppercase;
@@ -17,56 +18,116 @@
   color: var(--color-text-muted);
   margin-bottom: 20px;
 }
+
 .title {
   font-family: var(--font-serif);
   font-size: 48px;
   font-weight: 400;
   margin: 0 0 40px 0;
 }
+
 .info {
   font-style: normal;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 40px;
 }
+
 .phone {
   font-size: 24px;
   color: var(--color-text-dark);
   text-decoration: none;
 }
+
 .socials {
   display: flex;
   gap: 24px;
   margin-bottom: 24px;
 }
+
 .socials a {
   color: var(--color-text-dark);
   text-decoration: none;
   font-size: 14px;
   border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
 }
+
 .socials a:hover {
   border-bottom-color: var(--color-text-dark);
 }
+
 .payment {
   font-size: 14px;
   color: var(--color-text-muted);
 }
+
 .scheduleTitle {
   font-family: var(--font-serif);
   font-size: 32px;
   font-weight: 400;
   margin: 0 0 32px 0;
 }
+
 .scheduleList {
   list-style: none;
   padding: 0;
   margin: 0 0 24px 0;
 }
+
 .scheduleList li {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
   border-bottom: 1px solid #d1d6d3;
   font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 40px; /* Уменьшаем расстояние между колонками */
+    padding: 0 1.5rem;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .scheduleTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 720px) {
+  .contacts {
+    padding: 60px 0; /* Уменьшаем вертикальные отступы секции */
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 48px; /* Отступ между блоком "Мы здесь" и "Расписание" */
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+
+  .socials {
+    margin-bottom: 32px; /* Отодвигаем "Принимаем наличные" от соцсетей */
+  }
+
+  .scheduleTitle {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
 }

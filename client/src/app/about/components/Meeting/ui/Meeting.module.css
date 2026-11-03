@@ -1,16 +1,11 @@
-.aboutImages {
-  background-color: var(--color-bg-light);
-  padding: 40px 0 100px 0;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "image content"
-    "caption content"; /* Подпись под картинкой */
+    "caption content";
   column-gap: 80px;
-  row-gap: 16px; /* Отступ между картинкой и подписью */
+  row-gap: 16px;
   align-items: start;
 }
 
@@ -29,7 +24,7 @@
 
 .bottomRight {
   grid-area: content;
-  align-self: center; /* Центрируем контент по вертикали относительно картинки */
+  align-self: center;
 }
 
 .headingSmall {
@@ -73,12 +68,10 @@
   color: var(--color-text-muted);
 }
 
-/* Стили для кнопки на мобилке, чтобы она была на всю ширину */
 .button {
   width: auto;
 }
 
-/* 📱 Планшеты и мобилки (от 720px и ниже) */
 @media (max-width: 990px) {
   .aboutImages {
     padding: 20px 0 60px 0;
@@ -87,11 +80,11 @@
   .container {
     display: flex;
     flex-direction: column;
-    gap: 24px; /* Отступ между всеми элементами */
+    gap: 24px;
   }
 
   .imageWrapper {
-    margin-bottom: 0; /* Убираем лишний отступ, так как flex gap работает */
+    margin-bottom: 0;
   }
 
   .headingSmall {
@@ -105,13 +98,11 @@
 
   .features {
     margin-bottom: 32px;
-    /* На мобилке оставляем в строку (по скрину), 
-       если не влезает — можно сделать column */
   }
 
   .button {
-    width: 100%; /* Кнопка на всю ширину */
-    justify-content: center; /* Текст по центру (если внутри flex) */
+    width: 100%;
+    justify-content: center;
   }
 }
 

@@ -28,7 +28,7 @@ export const Header = () => {
           </a>
           <span className={cl.address}>Севастополь · ул. Сенявина, 1</span>
         </div>
-        <button className={cl.cartBtn}>
+        <NotStyledLink className={cl.cartBtn} href="/cart">
           <Image
             src="svg/box.svg"
             width={19}
@@ -36,9 +36,10 @@ export const Header = () => {
             alt=""
             loading="lazy"
           />
-          <span>Корзина · 1 190 ₽</span>
-          <span className={cl.cartCount}>4</span>
-        </button>
+          <span>Корзина</span>
+          {/* <span>Корзина · 1 190 ₽</span>
+          <span className={cl.cartCount}>4</span> */}
+        </NotStyledLink>
       </Container>
     </header>
   );

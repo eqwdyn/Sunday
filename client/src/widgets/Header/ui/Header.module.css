@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Добавляем flex-wrap, чтобы элементы могли переноситься на новые строки */
   flex-wrap: wrap;
   gap: 16px;
 }
@@ -26,8 +25,6 @@
   gap: 40px;
 }
 
-/* Стили для самой ссылки (если они лежат в Navigation, 
-   то этот класс можно удалить, но оставим на всякий случай) */
 .link {
   color: var(--color-text-light);
   text-decoration: none;
@@ -35,7 +32,6 @@
   opacity: 0.8;
 }
 
-/* Блок контактов */
 .contacts {
   display: flex;
   flex-direction: column;
@@ -55,7 +51,6 @@
 }
 
 .cartBtn {
-  background-color: transparent;
   border: 1px solid #78928b;
   color: white;
   padding: 10px 16px;
@@ -65,7 +60,7 @@
   gap: 12px;
   cursor: pointer;
   transition: 0.2s ease-in background-color;
-  white-space: nowrap; /* Чтобы текст внутри кнопки не переносился */
+  white-space: nowrap;
 }
 
 @media (hover: hover) {
@@ -78,70 +73,53 @@
   color: var(--color-text-muted-light);
 }
 
-/* =========================================
-   📱 ПЛАНШЕТЫ (от 1024px и ниже) 
-   (Первый скриншот)
-========================================= */
 @media (max-width: 1024px) {
-  .container {
-    /* Лого, навигация и корзина остаются в первой строке */
-  }
-
   .contacts {
-    /* Заставляем блок контактов перенестись на новую строку */
     order: 4;
     width: 100%;
-    flex-direction: row; /* Телефон и адрес встают в строку */
-    justify-content: space-between; /* Разносим их по краям */
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     margin-top: 8px;
   }
 }
 
-/* =========================================
-   📱 МОБИЛКИ (от 720px и ниже) 
-   (Второй и третий скриншоты)
-========================================= */
 @media (max-width: 720px) {
   .header {
     padding: 16px 0;
   }
 
   .container {
-    gap: 20px; /* Увеличиваем отступ между строками */
+    gap: 20px;
   }
 
-  /* 1. Логотип */
   .container > a:first-child {
     order: 1;
   }
 
-  /* 2. Кнопка Корзины */
   .cartBtn {
-    order: 2; /* Встает справа от логотипа */
+    order: 2;
     padding: 8px 12px;
     font-size: 13px;
   }
 
-  /* 3. Навигация (Меню и доставка / О нас) */
   .nav {
     order: 3;
-    width: 100%; /* Переносится на новую строку */
-    gap: 24px; /* Уменьшаем отступ между ссылками */
+    width: 100%;
+    gap: 24px;
     margin-top: 4px;
   }
 
-  /* 4. Контакты (Телефон и адрес) */
   .contacts {
     order: 4;
     width: 100%;
     flex-direction: row;
-    justify-content: flex-start; /* Прижимаем к левому краю */
-    gap: 12px; /* Отступ между телефоном и адресом */
+    justify-content: flex-start;
+    gap: 12px;
     text-align: left;
     margin-top: 0;
-    font-size: 11px; /* Чуть уменьшаем на мобилке */
+    font-size: 11px;
   }
 
   .phone {
@@ -149,10 +127,9 @@
   }
 }
 
-/* 📱 Очень узкие экраны (до 380px) */
 @media (max-width: 380px) {
   .contacts {
-    flex-direction: column; /* Если телефон и адрес не влезают в строку, ставим друг под другом */
+    flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
