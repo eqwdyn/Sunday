@@ -1,0 +1,66 @@
+.aboutText {
+  background-color: var(--color-bg-light);
+  padding: 100px 0 40px 0; /* Нижний отступ меньше, так как дальше идет картинка */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  color: var(--color-text-primary);
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topRight p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.cuisine {
+  font-size: 16px;
+  color: var(--color-text-muted);
+}
+.primaryColoredText {
+  color: var(--color-text-primary);
+  font-size: 16px;
+}
+.secondaryColoredText {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+/* 📱 Планшеты и мобилки (от 720px и ниже) */
+@media (max-width: 990px) {
+  .aboutText {
+    padding: 60px 0 20px 0;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 24px; /* Уменьшаем отступ между заголовком и текстом */
+  }
+
+  .heading {
+    font-size: 52px; /* Уменьшаем заголовок на мобилке */
+  }
+}
+@media (max-width: 425px) {
+  .heading {
+    font-size: 42px; /* Уменьшаем заголовок на мобилке */
+  }
+}

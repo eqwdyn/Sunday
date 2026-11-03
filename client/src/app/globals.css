@@ -7,6 +7,8 @@
   --color-text-muted-light: #becfc6;
   --color-text-muted: #737a70;
   --color-accent: #153f3c; /* Цвет кнопки */
+  --color-text-primary: #203a36;
+  --color-text-secondary: #153f3c;
 
   --font-serif: "Cormorant Garamond", serif; /* Для заголовков */
   --font-sans: "Inter", sans-serif; /* Для текста */

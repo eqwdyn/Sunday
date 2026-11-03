@@ -1,12 +1,14 @@
 import { Hero } from "./components/Hero";
-import { Intro } from "./components/Intro";
 import { Contacts } from "./components/Contacts";
+import { Atmosphere } from "./components/Atmosphere";
+import { Meeting } from "./components/Meeting";
 
 export default function AboutUsPage() {
   return (
     <>
       <Hero />
-      <Intro />
+      <Atmosphere />
+      <Meeting />
       <Contacts />
     </>
   );
