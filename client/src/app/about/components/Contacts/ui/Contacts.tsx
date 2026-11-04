@@ -36,8 +36,8 @@ export const Contacts = () => {
           </address>
 
           <div className={cl.socials}>
-            <a href={VK_LINK}>Telegram ↗</a>
-            <a href={TG_LINK}>Вконтакте ↗</a>
+            <a href={TG_LINK}>Telegram ↗</a>
+            <a href={VK_LINK}>Вконтакте ↗</a>
           </div>
           <p className={cl.payment}>Принимаем наличные и карты</p>
         </div>
